@@ -1,7 +1,7 @@
-package com.heman.blog.controllers;
+package com.heman.blog.controller;
 
-import com.heman.blog.entities.Post;
-import com.heman.blog.entities.PostRepo;
+import com.heman.blog.entity.Post;
+import com.heman.blog.repository.PostRepo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.*;
 // import javax.validation.Valid;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 @RequestMapping("/post")

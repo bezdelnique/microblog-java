@@ -1,4 +1,4 @@
-package com.heman.blog.entities;
+package com.heman.blog.entity;
 
 import javax.persistence.*;
 
