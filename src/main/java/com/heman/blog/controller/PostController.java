@@ -1,22 +1,19 @@
 package com.heman.blog.controller;
 
 import com.heman.blog.entity.Post;
-import com.heman.blog.repository.PostRepo;
+import com.heman.blog.repository.PostRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
-// import javax.validation.Valid;
-
 import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/post")
 public class PostController {
-    private final PostRepo postRepo;
+    private final PostRepository postRepo;
 
-    public PostController(PostRepo thePostRepo) {
+    public PostController(PostRepository thePostRepo) {
         this.postRepo = thePostRepo;
     }
 

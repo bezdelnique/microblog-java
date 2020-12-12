@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
-
-<head>
-    <title>Java blog mega tutorial</title>
-</head>
+<html xmlns:th="https://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'hello')}">
 
 <body>
+
 <h2>Java blog mega tutorial</h2>
 <hr>
 
@@ -33,5 +31,5 @@
 </form>
 
 </body>
-
 </html>
+

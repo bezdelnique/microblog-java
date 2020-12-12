@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'hello')}">
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <h1>Sidebar from page</h1>
+            <a href="#">Login page</a>
+        </div>
+        <div class="col">
+            <h1>Welcome to time page</h1>
+            <div th:text="'Time on the server is ' + ${theDate}" class="funny"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
